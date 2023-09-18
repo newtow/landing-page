@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily:{
+        'monts':['"Montserrat"','sans-serif']
+      },
       backgroundImage:{
         'latar':"url('../../public/assets/images/bg.svg')",
       }
