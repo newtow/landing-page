@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/split-type"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    @livewireStyles
 </head>
 <body>
     @include('layouts.navbar')
@@ -21,5 +22,6 @@
         <script>
           AOS.init();
         </script>
+          @livewireScripts
 </body>
 </html>
