@@ -1050,6 +1050,10 @@ input:checked + .toggle-bg {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1079,6 +1083,9 @@ input:checked + .toggle-bg {
 }
 .mt-4 {
   margin-top: 1rem;
+}
+.ml-3 {
+  margin-left: 0.75rem;
 }
 .block {
   display: block;
@@ -1347,6 +1354,10 @@ input:checked + .toggle-bg {
 .bg-white\/50 {
   background-color: rgb(255 255 255 / 0.5);
 }
+.bg-green-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(188 240 218 / var(--tw-bg-opacity));
+}
 .bg-opacity-50 {
   --tw-bg-opacity: 0.5;
 }
@@ -1477,6 +1488,10 @@ input:checked + .toggle-bg {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-green-700 {
+  --tw-text-opacity: 1;
+  color: rgb(4 108 78 / var(--tw-text-opacity));
 }
 .opacity-0 {
   opacity: 0;
@@ -1657,6 +1672,10 @@ input:checked + .toggle-bg {
 :is(.dark .dark\:text-white) {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+:is(.dark .dark\:text-blue-400) {
+  --tw-text-opacity: 1;
+  color: rgb(118 169 250 / var(--tw-text-opacity));
 }
 :is(.dark .dark\:placeholder-gray-400)::-moz-placeholder {
   --tw-placeholder-opacity: 1;

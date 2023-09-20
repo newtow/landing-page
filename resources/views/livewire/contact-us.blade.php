@@ -2,6 +2,15 @@
  
     <div class=" w-2/5 p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-6 md:p-8 dark:bg-gray-800 dark:border-gray-700 mx-20">
         <form class="space-y-6" wire:submit.prevent="kirim_email">
+            @if (session()->has('message'))
+            <div id="alert" class="flex p-4 my-4 text-green-700 rounded-lg bg-green-200 dark:bg-gray-800 dark:text-blue-400" role="alert">
+                <span class="sr-only">Info</span>
+                <div class="ml-3 text-sm font-medium">
+                    {{ session('message') }}
+                </div>
+                 
+              </div>
+              @endif
             <h5 class="text-xl font-medium  font-monts text-gray-900 dark:text-white">Kirim pesan ke platfrom kami</h5>
             <div>
                 <label for="nama" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Nama</label>

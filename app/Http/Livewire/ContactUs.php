@@ -41,8 +41,9 @@ class ContactUs extends Component
         ]);
         Mail::to('email@test.com')->send(new ContactUsWebsite($this->nama,$this->email,$this->subjek,$this->pesan,));
         $this->resetinput();
+      
+        session()->flash('message', 'Pesan Berhasil Dikirim.');
         $this->emitSelf('success');
-        
     
     }
     private function resetinput(){
